@@ -26,7 +26,7 @@ SECRET_KEY = 'v4h^z692u@t^fd4op^_tzkr%8ttnr4_g!9q1*frgm2znxr=qwf'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'api',
     'corsheaders',
+    'djoser',
 ]
 
 MIDDLEWARE = [

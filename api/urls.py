@@ -8,6 +8,8 @@ router = routers.DefaultRouter()
 router.register('exams', views.ExamsViewSet)
 router.register('students', views.StudentsViewSet)
 
-urlpatterns = [
+urlpatterns = [ 
     path('', include(router.urls)),
+    path('', include('djoser.urls')),
+    path('', include('djoser.urls.authtoken')),
 ]
